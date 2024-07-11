@@ -1,0 +1,119 @@
+header {
+    color: $color-black;
+
+    .sub-header {
+        background-color: $bg-nav;
+        padding: $p-8 $p-35;
+        font-size: $s-12;
+        .sub-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .sub-menu {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 0;
+                list-style: none;
+                li:not(.signin) {
+                    margin-right: $m-10;
+                    padding-right: $p-10;
+                    font-weight: $fw-7;
+                    border-right: 2px solid $color-black;
+                }
+                li.signin {
+                    font-weight: $fw-7;
+                }
+            }
+        }
+    }
+    .main-header {
+        background-color: $bg-white;
+        padding: $p-20 $p-35;
+        .main-header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-brand {
+                position: relative;
+                width: 170px;
+                height: 48px;
+                svg {
+                    position: absolute;
+                    left: -$s-5;
+                    bottom: -$s-3;
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            .nav-menu {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        position: relative;
+                        margin-right: $m-20;
+                        font-weight: $fw-6;
+                        transition: all 0.5s;
+                        &:hover::before {
+                            content: "";
+                            display: block;
+                            height: $s-2;
+                            width: 100%;
+                            bottom: -3px;
+                            left: 0;
+                            background-color: $color-black;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            .nav-whislist {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: $s-10;
+                margin-bottom: $s-10;
+                .search {
+                    position: relative;
+                    transition: all 0.4s;
+                    svg {
+                        height: $s-20;
+                        top: $s-6;
+                        left: $s-5;
+                        position: absolute;
+                    }
+                    span {
+                        position: absolute;
+                        top: $s-4;
+                        left: $s-35;
+                        color: $color-black;
+                        font-weight: $fw-6;
+                    }
+                    input {
+                        padding: 4px 0;
+                        border-radius: 999px;
+                        background-color: $bg-nav;
+                        border: none;
+                    }
+                    &:hover {
+                        input {
+                            background-color: $btn-hover;
+                        }
+                    }
+                }
+                a {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    line-height: 40px;
+                    text-align: center;
+                    &:hover {
+                        background-color: $btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
