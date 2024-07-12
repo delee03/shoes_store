@@ -135,6 +135,84 @@ header .main-header .main-header-content .nav-whislist a:hover {
   background-color: #e5e5e5;
 }
 
+.opening-area-1 {
+  padding: 50px 0;
+}
+.opening-area-1 .container-custom {
+  width: 60%;
+  margin: 0 auto;
+}
+.opening-area-1 .container-custom .single-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  text-transform: capitalize;
+}
+.opening-area-1 .container-custom .single-item ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+.opening-area-1 .container-custom .single-item ul a {
+  display: block;
+  color: #707072;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+.opening-area-1 .container-custom .single-item ul a:hover {
+  color: #111;
+}
+
+footer {
+  border-top: 2px solid #e5e5e5;
+  width: 100%;
+  gap: 12px;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+footer .single-item {
+  align-items: flex-start;
+  gap: 12px;
+}
+footer .single-item h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+footer .single-item p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #707072;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+footer .single-item p:hover {
+  color: #111;
+}
+footer .single-item-end {
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .single-item-end p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #707072;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+footer .single-item-end p:hover {
+  color: #111;
+}
+footer .copyright {
+  color: #707072;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .banner-area {
   height: 120vh;
 }
