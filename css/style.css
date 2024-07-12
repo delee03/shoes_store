@@ -51,7 +51,7 @@ header .sub-header .sub-content .sub-menu li.signin {
 }
 header .main-header {
   background-color: #fff;
-  padding: 20px 35px;
+  padding: 20px 35px 8px;
 }
 header .main-header .main-header-content {
   display: flex;
@@ -96,7 +96,7 @@ header .main-header .main-header-content .nav-whislist {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 header .main-header .main-header-content .nav-whislist .search {
   position: relative;
@@ -133,4 +133,57 @@ header .main-header .main-header-content .nav-whislist a {
 }
 header .main-header .main-header-content .nav-whislist a:hover {
   background-color: #e5e5e5;
+}
+
+.banner-area {
+  height: 120vh;
+}
+.banner-area .content {
+  position: relative;
+  height: 95vh;
+}
+.banner-area .content .video {
+  position: relative;
+}
+.banner-area .content .video video {
+  position: absolute;
+  left: -58px;
+  top: -55px;
+  z-index: -2;
+  width: 109%;
+}
+.banner-area .content .heading {
+  padding: 60px 0 50px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  top: 120%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  text-align: center;
+  /* margin-top: 16vh; */
+  color: #111;
+}
+.banner-area .content .heading h2 {
+  font-size: 60px;
+  font-weight: 800;
+}
+.banner-area .content .heading p {
+  font-size: 18px;
+}
+.banner-area .content .heading a button {
+  font-size: 16px;
+  background-color: #111;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner-area .content .heading a button:hover {
+  background-color: #707072;
 }/*# sourceMappingURL=style.css.map */

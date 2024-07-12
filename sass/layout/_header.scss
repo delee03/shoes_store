@@ -29,7 +29,7 @@ header {
     }
     .main-header {
         background-color: $bg-white;
-        padding: $p-20 $p-35;
+        padding: $p-20 $p-35 $p-8;
         .main-header-content {
             display: flex;
             justify-content: space-between;
@@ -74,7 +74,7 @@ header {
                 justify-content: space-between;
                 align-items: center;
                 gap: $s-10;
-                margin-bottom: $s-10;
+                margin-bottom: $s-20;
                 .search {
                     position: relative;
                     transition: all 0.4s;
