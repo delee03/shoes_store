@@ -1,2 +1,17 @@
+//1. Helpers
+@import "./helpers/variable";
+//2.vendors
+//3.Base
 @import "./base/custom";
 @import "./base/resset";
+
+//4. components
+@import "./components/button";
+//5. layouts
+@import "./layout/header";
+@import "./layout/footer";
+//6.Pages
+@import "./pages/banner";
+@import "./pages/impress";
+
+//7. Themes
