@@ -30,6 +30,10 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="./css/slick.theme.css">
+        <link rel="stylesheet" href="./css/slick.css">
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
@@ -121,11 +125,10 @@
         <section class="banner-area">
             <div class="content">
                 <div class="video">
-                    <video controls autoplay loop>
+                    <video controls autoplay loop muted>
                         <source
-                            src="./img/nike-video.mp4"
+                            src="./img/nike-video2.mp4"
                             width="100%"
-                            autoplay="true"
                             type="video/mp4"
                         ></source>
                     </video>             
@@ -139,31 +142,220 @@
         <!-- Banner-end -->
 
         <!-- ShopAir - Carousel start -->
-         <section class="shop-air-carousel " style="padding: 50px 0">
-            <div class="container-fluid">
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/image.png" class="d-block w-100
-                                    " alt="Air Max 270">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Shop Air</h5>
-                                        <p>Meet the next generation of Nike Air. Engineered to the exact specifications of championship
-                                            athletes.</p>
-                                            <a href="#" class="d-block"><button>Shop Air</button></a>
-                                            </div>
-                                    </div>
-                                </div>
-
+    
+                    <!-- section title -->
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">Top selling</h3>
+                            <div class="section-nav">
+                                <ul class="section-tab-nav tab-nav">
+                                    <li class="active"><a asp-controller="Product" asp-action="ShowIphone">Iphones</a></li>
+    
+                                    <li><a asp-controller="Product" asp-action="ShowMacbook" >Macbooks</a></li>
+    
+                                    <li><a asp-action="ShowAccessories" asp-controller="Product" >Accessories</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <!-- /section title -->
+                    <!-- Products tab & slick -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="products-tabs">
+                                <!-- tab -->
+                                <div id="tab2" class="tab-pane fade in active">
+                                    <div class="products-slick" data-nav="#slick-nav-2">
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <img src="./img/image.png" class="img-fluid" alt="">
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Category</p>
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <div class="product-rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                    <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </div>
+                                        </div>
+                                        <!-- /product -->
+                                        <div class="product">
+                                                <div class="product-img">
+                                                    <img src="./img/shoe1.jpg" class="img-fluid" alt="">
+                                                    <div class="product-label">
+                                                        <span class="sale">-30%</span>
+                                                        <span class="new">NEW</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">
+                                                    <p class="product-category">Category</p>
+                                                    <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                    <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                    <div class="product-rating">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="product-btns">
+                                                    <button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+                                                        <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                        <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="add-to-cart">
+                                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                                </div>
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <img src="./img/shoe2.jpg" class="img-fluid" alt="">
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Category</p>
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <div class="product-rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                    <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </div>
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <img src="./img/shoe3.jpg" class="img-fluid" alt="">
+                                                <div class="product-label">
+                                                    <span class="sale">-30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Category</p>
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <div class="product-rating">
+                                                </div>
+                                                <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                    <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </div>
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <img src="./img/shoe4.jpg"class="img-fluid"alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Category</p>
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <div class="product-rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                    <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </div>
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <img src="./img/shoe1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <p class="product-category">Category</p>
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <div class="product-rating">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa-regular fa-heart"></i><span class="tooltipp">add to wishlist</span></button>
+                                                    <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                                    <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </div>
+                                        </div>
+                                        <!-- /product --> 
+                                    </div>
+                                    <div id="slick-nav-2" class="products-slick-nav"></div>
+                                </div>
+                                <!-- /tab -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Products tab & slick -->
                 </div>
+                <!-- /row -->
             </div>
-         </section>
-            <!-- ShopAir - Carousel end -->
+            <!-- /container -->
+        </div>
+        <!-- /SECTION -->
+        <!-- shop air end  -->
+
 
         <!-- opening start  -->
          <section class="opening-area-1">
@@ -268,7 +460,7 @@
                 <div class=" row d-flex">
                     <div class="justify-content-start col-6 ">
                         <div class="copyright ms-0 py-5">
-                            <span>Copyright &copy; 2019 NIKE, Inc | All rights reserved - This template is made with Fuder_Phạm
+                            <span>Copyright &copy; <script>document.write(new Date().getFullYear());</script> NIKE, Inc | All rights reserved - This template is made with Fuder_Phạm
                         </div>
                     </div>
                 </div>
@@ -277,7 +469,12 @@
          </footer>
 
         
-        
+        <!-- CDN JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
