@@ -1,11 +1,11 @@
 @mixin styleButton() {
     background-color: $bg-black;
     color: $color-white;
-    font-size: $fs-lg;
+    font-size: $fs-md;
     font-weight: $fw-6;
     border: none;
     border-radius: 999px;
-    padding: $p-12 $p-16;
+    padding: $p-8 $p-16;
     transition: all 0.5s;
     cursor: pointer;
     &:hover {

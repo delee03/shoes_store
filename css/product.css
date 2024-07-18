@@ -157,7 +157,8 @@ Dots
     display: flex;
     justify-content: space-between;
 }
-.container-fluid {
+.container-fluid.nike {
+    max-width: 99% !important;
     margin: 0 20px;
 }
 /*----------------------------*\
