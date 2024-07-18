@@ -1,0 +1,32 @@
+.trending {
+    padding: 50px 0;
+    .container-fluid {
+        margin-right: 25px;
+        max-width: 97%;
+        .row {
+            margin-right: -35px;
+            .col-lg-6 {
+                width: 49%;
+                .item {
+                    position: relative;
+                    .noidung {
+                        position: absolute;
+                        color: white;
+                        bottom: 5%;
+                        left: 5%;
+                        h3 {
+                            font-size: $s-20;
+                        }
+                        p {
+                            font-size: $s-16;
+                        }
+                        button {
+                            font-size: $fs-md;
+                            @include styleButtonWhite();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

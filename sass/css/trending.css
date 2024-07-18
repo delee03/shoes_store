@@ -1,0 +1,16 @@
+.trending .container-fluid {
+  margin-right: 25px;
+  max-width: 97%;
+}
+.trending .container-fluid .col-lg-6 {
+  width: 49%;
+}
+.trending .container-fluid .col-lg-6 .item {
+  position: relative;
+}
+.trending .container-fluid .col-lg-6 .item .noidung {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 5%;
+}/*# sourceMappingURL=trending.css.map */
