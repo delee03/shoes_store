@@ -16,6 +16,10 @@
     visibility: hidden;
     z-index: 999;
 }
+.back-to-top::before {
+    content: "\f106";
+    font-family: FontAwesome;
+}
 
 .cd-top--is-visible {
     visibility: visible;

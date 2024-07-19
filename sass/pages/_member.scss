@@ -1,0 +1,26 @@
+.member {
+    .product {
+        .product-img {
+            img {
+                width: 100%;
+                height: 590px;
+            }
+            .noidung {
+                position: absolute;
+                color: white;
+                bottom: 5%;
+                left: 5%;
+                h3 {
+                    font-size: $s-20;
+                }
+                p {
+                    font-size: $s-16;
+                }
+                button {
+                    font-size: $fs-md;
+                    @include styleButtonWhite();
+                }
+            }
+        }
+    }
+}
