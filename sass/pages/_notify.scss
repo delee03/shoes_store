@@ -1,0 +1,43 @@
+.notify {
+    box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset;
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    .carousel-inner {
+        width: 50%;
+        margin: 0 auto;
+        .carousel-item {
+            min-height: 85px;
+            background: rgb(247, 247, 247);
+            box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset;
+            .content {
+                display: flex;
+                padding: 25px 0;
+                margin-top: 3px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-right: 30px;
+                h5 {
+                    margin-bottom: 0;
+                    font-size: 1.05rem;
+                }
+                span {
+                    font-size: $fs-sm;
+                }
+            }
+        }
+    }
+    .carousel-control-prev {
+        left: 250px;
+    }
+    .carousel-control-next {
+        right: 245px;
+    }
+    .carousel-control-prev-icon {
+        background-image: url("../../img/left-arrow-angle.png") !important;
+    }
+    .carousel-control-next-icon {
+        background-image: url("../../img/right-arrow-angle.png") !important;
+    }
+}

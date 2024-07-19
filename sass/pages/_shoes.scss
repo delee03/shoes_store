@@ -1,0 +1,59 @@
+.shoes {
+    padding: $s-30 0 $s-50;
+    .container-nike {
+        @include styleContainerNike();
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .breadcrum {
+                @include styleBreadcrum(
+                    $color: $color-black,
+                    $fs: $s-18,
+                    $fw: $fw-6
+                );
+            }
+            .filter {
+                display: flex;
+                gap: 10px;
+                font-weight: 600;
+                .filter-item:first-child {
+                    a {
+                        &::after {
+                            content: "\f1de";
+                            font-family: "Font Awesome 6 Free";
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .filter-item:last-child {
+                    a {
+                        &::after {
+                            content: "\f107";
+                            font-family: "Font Awesome 6 Free";
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .shoes-content {
+            .filter-shoe {
+                max-height: 420px;
+                overflow-y: scroll;
+                padding-right: 20px;
+                .item {
+                    padding: 15px 0;
+                    border-top: 1px solid rgba(208, 207, 207, 0.701);
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 //1. Helpers
 @import "./helpers/variable";
+@import "./helpers/mixin";
 //2.vendors
 //3.Base
 @import "./base/custom";
@@ -15,4 +16,6 @@
 @import "./pages/impress";
 @import "./pages/trending";
 @import "./pages/ads";
-@import "./pages/member"; //7. Themes
+@import "./pages/member";
+@import "./pages/notify";
+@import "./pages/shoes"; //7. Themes
