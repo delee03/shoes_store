@@ -157,3 +157,28 @@
     //     }
     // }
 })(jQuery);
+
+const btnFilter = document.querySelectorAll(".shoes .item-content");
+//console.log(btnFilter);
+
+for (let i = 0; i < btnFilter.length; i++) {
+    const element = btnFilter[i];
+    //element là 1 item-content
+    //từ item-content cần lấy ra các thẻ a kiểm tra nếu đúng index i thì remove lại show-text
+    //ngược lại add .show-text
+    const tagA = btnFilter[i].querySelector(".filters");
+    tagA.onclick = function (e) {
+        //console.log(e);
+        // handleCollapse(element);
+        element.classList.toggle("show-filter");
+    };
+}
+
+function handleCollapse(tag) {
+    for (let i = 0; i < btnFilter.length; i++) {
+        if (tag != btnFilter[i]) {
+            btnFilter[i].classList.remove("show-filter");
+        }
+    }
+    tag.classList.toggle("show-filter");
+}

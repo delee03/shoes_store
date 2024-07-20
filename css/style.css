@@ -435,13 +435,163 @@ footer .copyright {
   overflow-y: scroll;
   padding-right: 20px;
 }
-.shoes .container-nike .shoes-content .filter-shoe .item {
+.shoes .container-nike .shoes-content .filter-shoe .item-content {
   padding: 15px 0;
   border-top: 1px solid rgba(208, 207, 207, 0.701);
 }
-.shoes .container-nike .shoes-content .filter-shoe .item a {
+.shoes .container-nike .shoes-content .filter-shoe .item-content a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content a .down-icon {
+  display: none;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options {
+  display: none;
+  margin-top: 10px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .checkbox input {
+  min-height: 40px;
+  width: 16px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .checkbox label {
+  font-weight: 600;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 10px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick span {
+  font-size: 14px;
+  text-align: center;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .purple {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: purple;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .black {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(8, 8, 8);
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .red {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: red;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .orange {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .blue {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .white {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 0.5px solid #ccc;
+  background-color: white;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .brown {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: brown;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .green {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: green;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .yellow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .multiple {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: dashed 1px #000;
+  background-color: white;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .grey {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: grey;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .pink {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: pink;
+}
+.shoes .container-nike .shoes-content .filter-shoe .show-filter .choose-options {
+  display: block;
+}
+.shoes .container-nike .shoes-content .filter-shoe .show-filter a .down-icon {
+  display: inline-block;
+}
+.shoes .container-nike .shoes-content .filter-shoe .show-filter a .up-icon {
+  display: none;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4 {
+  padding: 8px !important;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item {
+  margin-bottom: 30px;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-img img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body {
+  margin-top: 15px;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .info {
+  font-weight: 600;
+  color: rgb(142, 27, 27);
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .product-name {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #000;
+  margin: 3px 0 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body p {
+  margin-bottom: 0;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .price {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #111;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
