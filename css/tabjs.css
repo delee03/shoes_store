@@ -1,0 +1,36 @@
+.tab-container {
+    width: 300px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.tab {
+    border-top: 1px solid #ccc;
+}
+
+.tab-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-header.active + .tab-content {
+    display: block;
+}
+
+.tab-header .arrow {
+    float: right;
+    transition: transform 0.3s;
+}
+
+.tab-header.active .arrow {
+    transform: rotate(180deg);
+}

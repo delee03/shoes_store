@@ -3,7 +3,7 @@
 //2.vendors
 //3.Base
 @import "./base/custom";
-@import "./base/resset";
+// @import "./base/resset";
 
 //4. components
 @import "./components/button";
@@ -13,5 +13,7 @@
 //6.Pages
 @import "./pages/banner";
 @import "./pages/impress";
+@import "./pages/detail";
+@import "./pages/item";
 
 //7. Themes

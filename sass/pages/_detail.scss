@@ -1,0 +1,25 @@
+.detail {
+    .container-fluid {
+        .blog_title {
+            text-align: center;
+            margin-top: 30px;
+                h2 {
+                    color: #111;
+                    font-size: $fs-4xl;
+                }
+                p {
+                    font-size: $fs-xl;
+                    color: #111;
+                }
+        }
+        .section-title {
+
+            padding: 0 48;
+            h3 {
+                color: #111;
+                font-size: $fs-2xl;
+                
+            }
+        }
+    }
+}

@@ -7,9 +7,9 @@
             $nav = $this.attr("data-nav");
 
         $this.slick({
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             infinite: true,
             speed: 300,
             dots: false,
