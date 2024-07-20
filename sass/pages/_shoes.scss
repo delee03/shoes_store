@@ -16,14 +16,15 @@
             }
             .filter {
                 display: flex;
-                gap: 10px;
+                gap: 15px;
                 font-weight: 600;
+                font-size: $s-18;
                 .filter-item:first-child {
                     a {
                         &::after {
                             content: "\f1de";
                             font-family: "Font Awesome 6 Free";
-                            margin-left: 5px;
+                            margin-left: 8px;
                         }
                     }
                 }
@@ -32,7 +33,7 @@
                         &::after {
                             content: "\f107";
                             font-family: "Font Awesome 6 Free";
-                            margin-left: 5px;
+                            margin-left: 8px;
                         }
                     }
                 }
@@ -40,6 +41,7 @@
         }
         .shoes-content {
             .filter-shoe {
+                display: block;
                 max-height: 420px;
                 overflow-y: scroll;
                 padding-right: 20px;
@@ -174,6 +176,7 @@
                 }
             }
             .list-shoes {
+                max-width: 81.9%;
                 .col-lg-4 {
                     padding: 8px !important;
                 }
@@ -183,6 +186,7 @@
                         img {
                             height: 400px;
                             width: 100%;
+                            background-color: #f5f5f5;
                             object-fit: cover;
                         }
                     }
@@ -203,6 +207,11 @@
                         p {
                             margin-bottom: 0;
                         }
+                        .category,
+                        .color {
+                            font-weight: $fw-6;
+                            color: #7c7878;
+                        }
                         .price {
                             margin-top: 8px;
                             font-weight: $fw-6;
@@ -210,6 +219,15 @@
                             font-size: $s-16;
                         }
                     }
+                }
+            }
+            .show-hide {
+                .filter-shoe {
+                    display: none;
+                }
+                .col-lg-10 {
+                    width: 97%;
+                    max-width: 97%;
                 }
             }
         }

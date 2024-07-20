@@ -164,8 +164,8 @@ const btnFilter = document.querySelectorAll(".shoes .item-content");
 for (let i = 0; i < btnFilter.length; i++) {
     const element = btnFilter[i];
     //element là 1 item-content
-    //từ item-content cần lấy ra các thẻ a kiểm tra nếu đúng index i thì remove lại show-text
-    //ngược lại add .show-text
+    //từ item-content cần lấy ra các thẻ a kiểm tra nếu đúng index i thì remove lại show-filter
+    //ngược lại add .show-filter
     const tagA = btnFilter[i].querySelector(".filters");
     tagA.onclick = function (e) {
         //console.log(e);
@@ -182,3 +182,21 @@ function handleCollapse(tag) {
     }
     tag.classList.toggle("show-filter");
 }
+
+// Handle show & hide filter
+const filterBar = document.getElementsByClassName("filter-shoe");
+const btnToggle = document.getElementById("btnToggle");
+const row = document.querySelector(".row-show");
+
+btnToggle.onclick = function (e) {
+    //  console.log(e);
+    row.classList.toggle("show-hide");
+    if (this.dataset.bit == 1) {
+        console.log(this.dataset.bit + "đây là dataset");
+        this.innerHTML = "Bật Filter";
+        this.dataset.bit = 2;
+    } else if (this.dataset.bit == 2) {
+        this.innerHTML = "Ẩn Filter";
+        this.dataset.bit = 1;
+    }
+};

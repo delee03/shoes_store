@@ -166,8 +166,8 @@
                         <a href="#"> All Shoes</a>
                     </div>
                     <div class="filter">
-                        <div class="filter-item">
-                            <a href="#!">Hide filter</a>
+                        <div class="filter-item" >
+                            <a href="#!" id="btnToggle" data-bit = "1">Ẩn filter</a>
                         </div>
                         <div class="filter-item">
                             <a href="#!">Sort By</a>                   
@@ -175,8 +175,8 @@
                     </div>
                 </div>
                 <div class="shoes-content">
-                    <div class="row">
-                        <div class="d-none col-lg-2 d-lg-block filter-shoe">
+                    <div class="row row-show">
+                        <div class="col-lg-2  filter-shoe">
                             <div class="item-first">
                                 <h4 class="fw-semibold mb-4 fs-5">Shoes</h4>
                             </div>
@@ -417,10 +417,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-10 list-shoes" style="max-width: 81.9%; margin-left:20px">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                     <!-- product -->
+                        <div class="col-lg-10 list-shoes" style="margin-left:20px">
+                            <div class="row" id="list-shoes">
+                                <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12">                            
                                      <div class="shoe-item">
                                         <div class="shoe-img">
                                             <a href="#!" class="d-block"> <img src="./img/image.png" alt=""> </a>                        
@@ -428,97 +427,18 @@
                                         <div class="shoe-body">
                                             <span class="info">Best Seller</span>
                                             <h3 class="product-name"><a href="#">Nike Pegasus 41</a></h3>
-                                            <p class="category">Category: Basketball Shoes</p>
+                                            <p class="category"> Basketball Shoes</p>
                                             <p class="color">3 colors</p>
                                             <div class="price">
-                                                <!-- <span class="price-old">$120.00</span> -->
+                                               
                                                 <span class="price-new">$100.00</span>
                                             </div>
                                         </div>
                                      
                                     </div>
-                                    <!-- /product -->
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                    <!-- product -->
-                                    <div class="shoe-item">
-                                       <div class="shoe-img">
-                                           <a href="#!" class="d-block"> <img src="./img/image.png"  alt=""> </a>                                               
-                                       </div>
-                                       <div class="shoe-body">
-                                           <span class="info">Best Seller</span>
-                                           <h3 class="product-name"><a href="#">Nike Pegasus 41</a></h3>
-                                           <p class="category">Category: Basketball Shoes</p>
-                                           <p class="color">3 colors</p>
-                                           <div class="price">
-                                               <!-- <span class="price-old d-block">$120.00</span> -->
-                                               <span class="price-new">$100.00</span>
-                                           </div>
-                                       </div>
-                                    
-                                   </div>
-                                   <!-- /product -->
-                               </div>
-                               <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <!-- product -->
-                                <div class="shoe-item">
-                                   <div class="shoe-img">
-                                       <a href="#!" class="d-block"> <img src="./img/image.png"  alt=""> </a>                           
-                                   </div>
-                                   <div class="shoe-body">
-                                       <span class="info">Best Seller</span>
-                                       <h3 class="product-name"><a href="#">Nike Pegasus 41</a></h3>
-                                       <p class="category">Category: Basketball Shoes</p>
-                                       <p class="color">3 colors</p>
-                                       <div class="price">
-                                           <!-- <span class="price-old">$120.00</span> -->
-                                           <span class="price-new">$100.00</span>
-                                       </div>
-                                   </div>
-                                
-                               </div>
-                               <!-- /product -->
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <!-- product -->
-                                <div class="shoe-item">
-                                   <div class="shoe-img">
-                                       <a href="#!" class="d-block"> <img src="./img/image.png"  alt=""> </a>                           
-                                   </div>
-                                   <div class="shoe-body">
-                                       <span class="info">Best Seller</span>
-                                       <h3 class="product-name"><a href="#">Nike Pegasus 41</a></h3>
-                                       <p class="category">Category: Basketball Shoes</p>
-                                       <p class="color">3 colors</p>
-                                       <div class="price">
-                                           <!-- <span class="price-old">$120.00</span> -->
-                                           <span class="price-new">$100.00</span>
-                                       </div>
-                                   </div>
-                                
-                               </div>
-                               <!-- /product -->
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <!-- product -->
-                                <div class="shoe-item">
-                                   <div class="shoe-img">
-                                       <a href="#!" class="d-block"> <img src="./img/image.png"  alt=""> </a>                           
-                                   </div>
-                                   <div class="shoe-body">
-                                       <span class="info">Best Seller</span>
-                                       <h3 class="product-name"><a href="#">Nike Pegasus 41</a></h3>
-                                       <p class="category"> Basketball Shoes</p>
-                                       <p class="color">3 colors</p>
-                                       <div class="price">
-                                           <!-- <span class="price-old">$120.00</span> -->
-                                           <span class="price-new">$100.00</span>
-                                       </div>
-                                   </div>
-                                
-                               </div>
-                               <!-- /product -->
-                              </div>
+                                   
+                                </div> -->
+                        
                             </div>
                         </div>
                     </div>
@@ -603,6 +523,13 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <!-- Axios -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+        integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        ></script>
 
         <!-- Feather Icons -->
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -614,5 +541,6 @@
          <script src="./js/util.js"></script>
 
         <script src="./js/index.js"></script>
+        <script src="./controllers/shoes.js"></script>
     </body>
 </html>
