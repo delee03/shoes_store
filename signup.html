@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng Ký</h2>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <select id="gender" required>
+                <option value="" disabled selected>Gender</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+                <!-- <option value="other">Other</option> -->
+            </select>
+            <button type="submit">Đăng Ký</button>
+            <div class="error" id="error"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const phone = document.getElementById('phone').value;
+            const gender = document.getElementById('gender').value;
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = '';  // Xóa mọi thông báo lỗi trước đó
+
+            fetch('https://shop.cyberlearn.vn/api/Users/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, password, phone, gender })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Đăng ký thành công!');
+                } else {
+                    throw new Error(data.message);
+                }
+            })
+            .catch(error => {
+                errorDiv.textContent = error.message;
+            });
+
+            //reset form
+            // event.target.reset();
+        });
+    </script>
+</body>
+</html>
