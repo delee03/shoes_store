@@ -9,12 +9,13 @@
         $this.slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             infinite: true,
+            loop: true,
             speed: 300,
             dots: false,
             arrows: true,
-            appendArrows: $nav ? $nav : false,
+            appendArrows: $nav ? $nav : $nav,
             responsive: [
                 {
                     breakpoint: 991,

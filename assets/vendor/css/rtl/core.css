@@ -7,7 +7,8 @@
 [data-bs-theme="light"] {
     --bs-blue: #16b1ff;
     --bs-indigo: #666cff;
-    --bs-purple: #8c57ff;
+    /* --bs-purple: #8c57ff; */
+        --bs-purple: #111;
     --bs-pink: #e83e8c;
     --bs-red: #ff4c51;
     --bs-orange: #ffb400;
@@ -21,7 +22,8 @@
     --bs-gray-dark: rgba(46, 38, 61, 0.8);
     --bs-gray-25: rgba(46, 38, 61, 0.025);
     --bs-gray-50: rgba(46, 38, 61, 0.06);
-    --bs-primary: #8c57ff;
+    /* --bs-primary: #8c57ff; */
+    --bs-primary: #111;
     --bs-secondary: #8a8d93;
     --bs-success: #56ca00;
     --bs-info: #16b1ff;
