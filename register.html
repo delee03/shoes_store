@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./shoes_store/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="register-form">
+        <h1>Enter your email to join us or sign in.</h1>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div id="gen" class="form-group">
+          <label>Gender</label>
+          <div>
+            <input type="radio" id="male" name="gender" value="true" required />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="false"
+              required
+            />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <span id="term"
+          >By continuing, I agree to CyberSoft’s Privacy Policy and Terms of
+          Use.</span
+        >
+        <div id="but">
+          <button type="submit">Register</button>
+        </div>
+        <div id="notification" class="notification"></div>
+      </form>
+    </div>
+
+    <script
+      src=" https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./shoes_store/js/register.js"></script>
+  </body>
+</html>
