@@ -179,9 +179,22 @@
                 max-width: 81.9%;
                 .col-lg-4 {
                     padding: 8px !important;
+                    opacity: 0;
+                    animation-name: zoomIn;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards; // giữ lại giá trị sau khi chạy animation
+                    @for $i from 2 through 19 {
+                        //hành độg xử lí trong vòng lặp
+                        &:nth-child(#{$i}) {
+                            //i = 2 => 1s; i= 3 => 2s
+                            animation-delay: ($i - 1) * 0.5s;
+                        }
+                    }
                 }
+
                 .shoe-item {
                     margin-bottom: 30px;
+
                     .shoe-img {
                         img {
                             height: 400px;

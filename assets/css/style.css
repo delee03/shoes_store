@@ -1,3 +1,14 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 a {
   text-decoration: none;
   color: #000;
@@ -566,6 +577,64 @@ footer .copyright {
 }
 .shoes .container-nike .shoes-content .list-shoes .col-lg-4 {
   padding: 8px !important;
+  opacity: 0;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(3) {
+  animation-delay: 1s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(5) {
+  animation-delay: 2s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(7) {
+  animation-delay: 3s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(8) {
+  animation-delay: 3.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(9) {
+  animation-delay: 4s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(10) {
+  animation-delay: 4.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(11) {
+  animation-delay: 5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(12) {
+  animation-delay: 5.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(13) {
+  animation-delay: 6s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(14) {
+  animation-delay: 6.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(15) {
+  animation-delay: 7s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(16) {
+  animation-delay: 7.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(17) {
+  animation-delay: 8s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(18) {
+  animation-delay: 8.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(19) {
+  animation-delay: 9s;
 }
 .shoes .container-nike .shoes-content .list-shoes .shoe-item {
   margin-bottom: 30px;

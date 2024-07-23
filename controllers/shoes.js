@@ -8,10 +8,12 @@ function getAllShoes() {
         method: "GET",
     });
 
-    promise.then((res) => {
-        console.log(res);
-        renderShoeList(res.data.content, "list-shoes");
-    });
+    promise
+        .then((res) => {
+            console.log(res);
+            renderShoeList(res.data.content, "list-shoes");
+        })
+        .catch((err) => console.log(err));
 }
 
 getAllShoes();

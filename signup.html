@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Đăng Ký</title>
-        <link rel="stylesheet" href="./css/signup.css" />
+        <link rel="stylesheet" href="./assets/css/signup.css" />
     </head>
     <body>
         <div class="container">
             <h2>Đăng Ký</h2>
-            <form id="registerForm">
+            <form id="registerForm" action="./index.html">
                 <input type="text" id="name" placeholder="Name" required />
                 <input type="email" id="email" placeholder="Email" required />
                 <input
@@ -43,6 +43,9 @@
                     const gender = document.getElementById("gender").value;
                     const errorDiv = document.getElementById("error");
                     errorDiv.textContent = ""; // Xóa mọi thông báo lỗi trước đó
+                    console.log(name);
+                    console.log(email);
+                    console.log(password);
 
                     fetch("https://shop.cyberlearn.vn/api/Users/signup", {
                         method: "POST",
