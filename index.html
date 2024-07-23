@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Shoe Store Capstone</title>
+        <title>Nika Store VN</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+        name="description"
+        content="Capstone Project NIKA : Thuận Phát, Sinh Hưng"
+        />
+        <meta
+            name="keywords"
+            content="nike, nike, project cybersoft, API axios"
+        />
+        <!-- Canonical SEO -->
+        <link
+            rel="canonical"
+            href="https://themeselection.com/item/materio-bootstrap-html-admin-template/"
         />
 
         <!-- Bootstrap CSS v5.2.1 -->
@@ -16,7 +29,9 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link href="./assets/img/favicon.png" rel="shortcut icon" type="image/x-icon" ></link>
         <!-- FontAwesome 6.2.0 CSS -->
+         <link rel="stylesheet" href="./css/fontawesome.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -30,17 +45,722 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="./assets/css/slick.theme.css">
+        <link rel="stylesheet" href="./assets/css/slick.css">
+        <link rel="stylesheet" href="./assets/css/product.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
-        <h1>Bài tập Capstone Project Shoes Store</h1>
-        <p class="fw-bold my-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
-        </p>
-        <button class="bg-success text-white px-4 py-2 rounded-3">
-            Test Giao diện
-        </button>
+        <!-- Header start-->
+        <header>
+            <div class="sub-header">
+                <div class="container-fluid">
+                    <div class="sub-content">
+                        <div class="sub-logo">
+                            <a>
+                                <svg
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    role="img"
+                                    width="24px"
+                                    height="24px"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        fill-rule="evenodd"
+                                        d="M13.182 3.733c-.012-.039-.012-.039-.012-.072a.966.966 0 01.922-1.007.97.97 0 011.007.922.964.964 0 01-.917 1.007c-.027.004-.062 0-.101 0-.016.004-.04.004-.056.022-.056.084.14.073-.005.44 0 0 0 .038-.012.077-.012.14-.08.562-.096.793.029.04.04.05.029.13a6.003 6.003 0 01-.09.534c-.04.14-.096.174-.147.202-.073.298-.095.545-.281.905-.022.276-.045.35-.106.484-.017.4.01.46-.281 1.101-.08.3-.017.507.05.821.068.321.276.461.298.793.05.771.017 1.305-.163 1.907l.135.348c.18.084.618.326.36.675.343.19.865.394 1.28.781.176.147.35.315.513.5.316.057.276.08.506.231.675.438 1.749 1.304 2.373 1.906.112.067.147.112.236.163.01.023.017.034.01.04-.026.072-.026.072-.06.14.039.04.095.073.134.107.04.005.04-.006.096-.017.079.073.18.135.214.135.106-.022.084-.005.185-.1.029-.035.084 0 .084 0 .04-.04.113-.119.214-.176.079-.045.23-.045.23-.045.052.006.04.051.029.073-.057.023-.18.057-.247.108-.152.14-.276.353-.276.353.299-.033.484.045.719.023.136-.005.237.006.377-.09 0 0 .14-.096.265-.14.118-.05.23-.017.33.062.069.084.119.084 0 .196-.044.045-.1.096-.18.17-.133.123-.313.291-.5.432a3.11 3.11 0 01-.527.315c-.338.23-.26.174-.523.394-.03.022-.124.078-.163.106-.107.062-.135.006-.197-.118 0 0-.028-.045-.08-.14-.05-.107-.09-.23-.072-.23-.062-.007-.331-.344-.331-.41-.063-.013-.304-.26-.31-.31l-.214-.18c-.253.044-.31-.113-.961-.608-.08-.006-.197-.05-.36-.174-.298-.253-1.007-.815-1.124-.883-.13-.067-.281-.134-.383-.214-.146-.022-.218-.05-.298-.067-.08-.022-.14-.057-.326-.079-.303-.045-.618-.18-.911-.337-.14-.073-.264-.107-.382-.169-.27-.124-.506-.236-.686-.28a2.148 2.148 0 01-.568-.226c-.061-.034-.095-.06-.134-.073-.09-.022-.153.006-.192.022-.23.108-.438.203-.636.31-.18.09-.348.186-.528.286a7.971 7.971 0 01-.534.254s-.534.253-.832.348c-.26.197-.787.546-1.107.715-.158.073-.467.252-.608.292-.08.061-.371.258-.596.421-.18.124-.31.231-.31.231-.106.084-.101.13-.28.045a1.491 1.491 0 00-.13.096c-.14.095-.146.073-.202.067-.101.08-.113.04-.197.13-.061.084 0 .061-.118.106-.028.006-.04.04-.057.056-.094.073-.1.293-.325.304-.135.09-.107.203-.197.191 0 .102-.18.23-.214.23-.292.096-.304-.118-.646.035-.045.016-.113.072-.197.084-.152.022-.332-.006-.444-.102a1.93 1.93 0 01-.326-.398c-.051-.13-.017-.208.163-.332.073-.045.084-.079.208-.084.06-.024.045.01.15-.024.064-.016.064-.005.193-.005.028-.017.067-.022.124-.045.1-.034.196-.062.196-.062s.028-.023.124-.01c.078-.035.169-.08.214-.097-.012-.124.005-.124.06-.174.08-.062.09-.05.148-.01.022-.007.039-.013.027-.035-.01-.073-.061-.107-.045-.247-.022-.057-.061-.129-.05-.174.01-.045.028-.069.056-.079.029-.012.045.006.057.022.028.034.05.135.05.135.006.118.04.26.152.18.067-.062.084-.242.214-.203l.096.085c.084-.073.084-.073.14-.107 0 0-.08-.073-.012-.135.045-.039.108-.067.208-.175.276-.292.422-.42.714-.657a6.811 6.811 0 011.699-.939c.146-.174.28-.286.585-.304.377-.606 1.085-1.136 1.248-1.22.134-.23.19-.208.365-.247.135-.107.175-.107.23-.214.063-.23-.112-.86.383-.877.112-.146.078-.112.196-.248a2.19 2.19 0 01-.118-.5c-.005-.016-.196-.157-.13-.332a2.33 2.33 0 01-.268-.432.202.202 0 01-.063-.012c-.022-.005-.055-.005-.09-.005-.078.196-.163.208-.303.253-.26.512-.35.731-1.046 1.142-.28.298-.382.64-.382.634a.46.46 0 00-.012.321c-.045.107-.027.124-.027.124.01.045.056.106.106.112.079.023.169.023.158.118-.011.113-.163.09-.237.073-.275-.05-.185-.23-.365-.174-.141.085-.196.348-.416.31-.028-.023-.017-.074.006-.119.028-.06.084-.118.056-.14-.146.04-.433.123-.433.123-.135.04-.281-.039-.147-.124.063-.022.153-.05.265-.118 0 0 .062-.072-.057-.039a1.144 1.144 0 01-.416.045s-.257-.039-.292-.056c-.028-.022-.061-.107.017-.1a2.71 2.71 0 00.563-.068c.095-.035.28-.14.382-.186 0 0 .113-.157.18-.19.107-.114.19-.18.28-.299.09-.18.192-.46.5-.906a4.16 4.16 0 01.535-.646s.062-.338.343-.573c.063-.14.157-.31.259-.462a1.7 1.7 0 00.106-.168c.09-.13.186-.377.518-.41 0 0 .147-.102.197-.175.084-.073.074-.186.14-.259-.106-.106-.365-.309-.382-.573a.85.85 0 01.265-.692c.196-.185.398-.275.646-.258.309.055.366.157.455.258.09.101.13.04.163.146.259.073.248.045.237.236.045.057.106.108.1.214.085-.175.108-.208.344-.399.062-.157.1-.315.15-.478.052-.146.114-.298.154-.41-.04-.326.06-.377.196-.664-.022-.039-.016-.05-.006-.112.057-.192.136-.433.186-.596 0 0 .017-.063.085-.063.06-.202.157-.579.179-.663.062-.208.029-.287-.01-.41-.012-.04-.006-.09-.03-.136a5.483 5.483 0 01-.19-.41c-.028-.073-.08-.354-.08-.354-.004-.062-.004-.09-.004-.09z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a href="#">Find a Store</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">John us</a></li>
+                            <li class="signin"><a href="./html/register/login.html">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container-fluid">
+                    <div class="main-header-content">
+                        <div class="nav-brand">
+                            <a href="/index.html">
+                                <svg
+                                    aria-hidden="true"
+                                    class="swoosh-svg"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    role="img"
+                                    width="24px"
+                                    height="24px"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        fill-rule="evenodd"
+                                        d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+                                        clip-rule="evenodd"
+                                    ></path></svg
+                            ></a>
+                        </div>
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="products.html">New & Featured</a></li>
+                                <li><a href="products.html">Men</a></li>
+                                <li><a href="products.html">Women</a></li>
+                                <li><a href="products.html">Kids</a></li>
+                                <li><a href="products.html">Sale</a></li>
+                                <li><a href="products.html">Customise</a></li>
+                                <li><a href="products.html">SNKRS</a></li>
+                            </ul>
+                        </nav>
+                        <div class="nav-whislist">
+                            <div class="search">
+                                <i data-feather="search"></i>
+                                <input type="text" />
+                                <span>Search</span>
+                            </div>
+                            <a href="#"><i data-feather="heart"></i></a>
+                            <a href="#"><i data-feather="shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end-->
+
+        <!-- Banner-start -->
+        <section class="banner-area">
+            <div class="content">
+                <div class="video">
+                    <video controls autoplay loop muted>
+                        <source
+                            src="./assets/img/banner_main.mp4"
+                            width="100%"
+                            type="video/mp4"
+                        ></source>
+                    </video>             
+              </div>
+              <div class="heading">
+                <h2>WIN ON AIR</h2>
+                <p>Meet the next generation of Nike Air. Engineered to the exact specifications of championship athletes.</p>
+                <div class="action d-flex g-3 justify-content-center">
+                    <a href="products.html" class="d-block"><button>Experience Air</button></a>
+                    <a href="products.html" class="d-block ms-2"><button>Shop Air</button></a>               
+                </div>
+                
+            </div>
+        </section>
+        <!-- Banner-end -->
+
+        <!-- ShopAir - Carousel start -->
+        <div class="section">
+            <!-- container -->
+            <div class="container-fluid nike">
+                <!-- row -->
+                <div class="row">
+    
+                    <!-- section title -->
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">Top selling</h3>
+                        
+                            <div id="slick-nav-2" class="products-slick-nav"></div>
+                        
+                        </div>
+                    </div>
+                    <!-- /section title -->
+                    <!-- Products tab & slick -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="products-tabs">
+                                <!-- tab -->
+                                <div id="tab2" class="tab-pane fade in active">
+                                    <div class="products-slick" data-nav="#slick-nav-2">
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="#!" class="d-block"> <img src="./assets/img/image.png" class="img-fluid" alt=""> </a>
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>           
+                                            </div>
+                                            <div class="product-body">
+                                          
+                                                <h3 class="product-name"><a href="#">Nike Pegasus 41</a></h3>
+                                              
+                                            </div>
+                                         
+                                        </div>
+                                        <!-- /product -->
+                                        <div class="product">
+                                                <div class="product-img">
+                                                    <a href="products.html" class="d-block">  <img src="./assets/img/shoe1.jpg" class="img-fluid" alt=""></a>                                                  
+                                                    <div class="product-label">
+                                                        <span class="new">NEW</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-body">                                               
+                                                    <h3 class="product-name"><a href="#">Nike G.T. Hustle 3</a></h3>                                             
+                                                </div>
+                                               
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html"> <img src="./assets/img/shoe2.jpg" class="img-fluid" alt=""></a>                                              
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">                                          
+                                                <h3 class="product-name"><a href="#">Nike Alphafly 3</a></h3>                                          
+                                            </div>
+                                         
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html"> <img src="./assets/img/shoe3.jpg" class="img-fluid" alt=""> </a>                                           
+                                                <div class="product-label">
+                                                    <span class="sale">-30%</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-body">                                              
+                                                <h3 class="product-name"><a href="#">Nike Mercurial Superfly</a></h3>         
+                                            </div>                                    
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                               <a href="products.html" class="d-block"> <img src="./assets/img/shoe4.jpg"class="img-fluid"alt=""></a>
+                                               <div class="product-label">
+                                                <span class="sale">-30%</span>
+                                            </div>
+                                            </div>
+                                            <div class="product-body">                                             
+                                                <h3 class="product-name"><a href="#">Nike Pegasus EasyOn</a></h3>
+                                           </div>   
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html" class="d-block"><img src="./assets/img/shoe1.jpg" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="product-body">                                      
+                                                <h3 class="product-name"><a href="#">Nike Mercurial Vapor</a></h3>
+                                            </div>
+                                        </div>
+                                        <!-- /product --> 
+                                    </div>
+                                
+                                </div>
+                                <!-- /tab -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Products tab & slick -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /SECTION -->
+        <!-- shop air end  -->
+
+        <!-- Our Turn Start -->
+           <!-- Banner-start -->
+        <section class="banner-area" style="margin: 130px 0 -50px;">
+            <div class="content">
+                <div class="video">
+                    <video controls autoplay loop muted>
+                        <source
+                            src="./assets/img/our_turn.mp4"
+                            width="100%"
+                            type="video/mp4"
+                        ></source>
+                    </video>             
+              </div>
+              <div class="heading">
+                <h2>OUR TURN</h2>
+                <p>We're not waiting on history. We're making it</p>
+                 <a href="products.html" class="d-block"><button>Let's go</button></a>                                                 
+            </div>
+        </section>
+        <!-- Ourturn-end -->
+
+        <!-- Tredning start -->
+         <section class="trending">
+            <div class="container-fluid">
+                <div class="trending-content">
+                    <div class="section-title" style="margin-left: 10px">
+                        <h3>Trending</h3>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-12 col-lg-6">
+                            <div class="item">
+                                <img src="./assets/img/trending1.jpg" alt="" class="img-fluid">
+                                <div class="noidung">
+                                   <h3>Nike Alate Bra</h3>
+                                   <p>Look Smooth, Feels Smoother.</p>
+                                   <a href="products.html"><button >Shop Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="item">
+                                <img src="./assets/img/trending2.jpg" alt=""  class="img-fluid">
+                                <div class="noidung">
+                                    <p class="mb-1">Just In: Air Max Dn.</p>
+                                   <h3 class="mb-4">Victor Wembanyama: Otherworldly Moves </h3>                                 
+                                   <a href="products.html"><button >Shop Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- trending end -->
+
+         <!-- banner-advertisment start -->
+          <section class="banner-ads">
+            <div class="container-nike">
+                <div class="section-title">
+                    <h3>Don't Miss</h3>
+                </div>
+                <img src="./assets/img/banner_ads.png" class="img-fluid" alt="">
+            </div>
+          </section>
+            <!-- banner-advertisment end -->
+
+        <!-- Spotlight start -->
+        <div class="section" style="padding: 50px 0">
+            <!-- container -->
+            <div class="container-fluid nike">
+                <!-- row -->
+                <div class="row">
+    
+                    <!-- section title -->
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">Classics Spotlight</h3>
+                        
+                            <div id="slick-nav-1" class="products-slick-nav"></div>
+                        
+                        </div>
+                    </div>
+                    <!-- /section title -->
+                    <!-- Products tab & slick -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="products-tabs">
+                                <!-- tab -->
+                                <div id="tab2" class="tab-pane fade in active">
+                                    <div class="products-slick" data-nav="#slick-nav-1">
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="#!" class="d-block"> <img src="./assets/img/nike1.jpg" class="img-fluid" alt=""> </a>
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>           
+                                            </div>                                                                                    
+                                        </div>
+                                        <!-- /product -->
+                                        <div class="product">
+                                                <div class="product-img">
+                                                    <a href="#!" class="d-block">  <img src="./assets/img/nike2.jpg" class="img-fluid" alt=""></a>                                                  
+                                                    <div class="product-label">
+                                                        <span class="new">NEW</span>
+                                                    </div>
+                                                </div>                                                                                                
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="#!"> <img src="./assets/img/nike3.jpg" class="img-fluid" alt=""></a>                                              
+                                                <div class="product-label">
+                                                    <span class="new">NEW</span>
+                                                </div>
+                                            </div>                                                                                   
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="#!"> <img src="./assets/img/nike4.jpg" class="img-fluid" alt=""> </a>                                           
+                                                <div class="product-label">
+                                                    <span class="sale">-30%</span>
+                                                </div>
+                                            </div>                                                                           
+                                        </div>
+                                        <!-- /product -->                                  
+                                    </div>
+                                
+                                </div>
+                                <!-- /tab -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Products tab & slick -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /spotlight end -->
+
+         <!-- Shop by sport start -->
+         <div class="section sport" style="padding: 50px 0">
+            <!-- container -->
+            <div class="container-fluid nike">
+                <!-- row -->
+                <div class="row">
+    
+                    <!-- section title -->
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h3 class="title">Shop by Sport</h3>
+                        
+                            <div id="slick-nav-4" class="products-slick-nav"></div>
+                        
+                        </div>
+                    </div>
+                    <!-- /section title -->
+                    <!-- Products tab & slick -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="products-tabs">
+                                <!-- tab -->
+                                <div id="tab2" class="tab-pane fade in active">
+                                    <div class="products-slick" data-nav="#slick-nav-4">
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html" class="d-block"> <img src="./assets/img/sport1.jpg" class="img-fluid" alt=""> </a>
+                                                <div class="noidung">
+                                                    <h5 class="mt-3 fw-semibold">Nike Basketball</h5>
+                                                    <p>Style made for your game.</p>
+                                                    <a href="products.html" class="text-black fw-semibold text-decoration-underline">Shop</a>
+                                                    </div>         
+                                            </div>                                                                                    
+                                        </div>
+                                        <!-- /product -->
+                                        <div class="product">
+                                                <div class="product-img">
+                                                    <a href="products.html" class="d-block">  <img src="./assets/img/sport2.jpg" class="img-fluid" alt=""></a>                                                  
+                                                    <div class="noidung">
+                                                        <h5 class="fw-semibold mt-3">Nike Golf</h5>
+                                                        <p>Look Smooth, any course in style.</p>
+                                                        <a href="products.html" class="fw-semibold text-decoration-underline">Shop</a>
+                                                        </div>
+                                                </div>                                                                                                
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html"> <img src="./assets/img/sport3.jpg" class="img-fluid" alt=""></a>                                              
+                                                <div class="noidung">
+                                                    <h5 class="fw-semibold mt-3">Nike Trrail</h5>
+                                                    <p>Gear that leads to wild places.</p>
+                                                    <a href="products.html" class=" fw-semibold text-decoration-underline">Shop</a>
+                                                    </div>
+                                            </div>                                                                                   
+                                        </div>
+                                        <!-- /product -->
+                                        <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html"> <img src="./assets/img/sport4.jpg" class="img-fluid" alt=""> </a>                                           
+                                                <div class="noidung">
+                                                    <h5 class="fw-semibold mt-3">Nike Tennis</h5>
+                                                    <p>Serve up in style.</p>
+                                                    <a href="products.html" class="fw-semibold text-decoration-underline">Shop</a>
+                                                    </div>
+                                            </div>                                                                           
+                                        </div>
+                                        <!-- /product -->       
+                                            <!-- product -->
+                                        <div class="product">
+                                            <div class="product-img">
+                                                <a href="products.html"> <img src="./assets/img/sport5.jpg" class="img-fluid" alt=""> </a>                                           
+                                                <div class="noidung">
+                                                    <h5 class="fw-semibold mt-3">Nike Football</h5>
+                                                    <p>Bring mad style to the pitch with the latest gear.</p>
+                                                    <a href="products.html" class=" fw-semibold text-decoration-underline">Shop</a>
+                                                    </div>
+                                            </div>                                                                           
+                                        </div>
+                                        <!-- /product -->                                                             
+                                    </div>
+                                
+                                </div>
+                                <!-- /tab -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Products tab & slick -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /Shop by sport end -->
+
+
+        <!-- Member benefit start -->
+        <div class="section member" style="padding: 50px 0">
+        <!-- container -->
+        <div class="container-fluid nike">
+            <!-- row -->
+            <div class="row">
+
+                <!-- section title -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h3 class="title">Member Benefits</h3>
+                    
+                        <div id="slick-nav-3" class="products-slick-nav"></div>
+                    
+                    </div>
+                </div>
+                <!-- /section title -->
+                <!-- Products tab & slick -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="products-tabs">
+                            <!-- tab -->
+                            <div id="tab2" class="tab-pane fade in active">
+                                <div class="products-slick" data-nav="#slick-nav-3">
+                                    <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <a href="/products.html" class="d-block"> <img src="./assets/img/mem1.jpg" class="img-fluid" alt=""> </a>
+                                            <div class="noidung">
+                         
+                                                <p class="mb-1">Member Product</p>
+                                                <h3 class="mb-4 fs-4">Your Exclusive Access</h3>
+                                                <a href="products.html"><button >Shop</button></a>
+                                                </div>         
+                                        </div>                                                                                    
+                                    </div>
+                                    <!-- /product -->
+                                    <div class="product">
+                                            <div class="product-img">
+                                                <a href="#!" class="d-block">  <img src="./assets/img/mem2.png" class="img-fluid" alt=""></a>                                                  
+                                                <div class="noidung">
+                                                  
+                                                    <p class="mb-1">Nike By You</p>
+                                                    <h3 class="mb-4 fs-4">Your Customisation Service</h3>
+                                                    <a href="products.html"><button >Customise</button></a>
+                                                    </div>
+                                            </div>                                                                                                
+                                    </div>
+                                    <!-- /product -->
+                                    <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <a href="products.html"> <img src="./assets/img/mem3.jpg" class="img-fluid" alt=""></a>                                              
+                                            <div class="noidung">
+                                                <p class="mb-1">Member Rewards</p>
+                                                <h3 class="mb-4 fs-4">How We Say Thank You</h3>
+                                               
+                                                <a href="products.html"><button >Celebrate</button></a>
+                                                </div>
+                                        </div>                                                                                   
+                                    </div>
+                                    <!-- /product -->
+                                    <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <a href="products.html"> <img src="./assets/img/mem4.jpg" class="img-fluid" alt=""> </a>                                           
+                                            <div class="noidung">
+                                                <p class="mb-1">Member Days</p>
+                                                <h3 class="mb-4 fs-4">A Celebration of You</h3>
+                                              
+                                                <a href="products.html"><button >Learn more</button></a>
+                                                </div>
+                                        </div>                                                                           
+                                    </div>
+                                    <!-- /product -->       
+                                        <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <a href="products.html"> <img src="./assets/img/mem5.jpg" class="img-fluid" alt=""> </a>                                           
+                                            <div class="noidung">
+                                                <p class="mb-1">Sports & Wellness Apps</p>
+                                                <h3 class="mb-4 fs-4">Movement Everywhere</h3>
+                                                
+                                                <a href="products.html"><button >Move</button></a>
+                                                </div>
+                                        </div>                                                                           
+                                    </div>
+                                    <!-- /product -->   
+                                        <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <a href="products.html"> <img src="./assets/img/mem6.jpg" class="img-fluid" alt=""> </a>                                           
+                                            <div class="noidung">
+                                                <p class="mb-1">SNKRS</p>
+                                                <h3 class="mb-4 fs-4">Your Ultimate Sneaker Comunity</h3>
+                                                
+                                                <a href="products.html"><button >Explore</button></a>
+                                                </div>
+                                        </div>                                                                           
+                                    </div>
+                                    <!-- /product -->                              
+                                </div>
+                            
+                            </div>
+                            <!-- /tab -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /Products tab & slick -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+        </div>
+        <!-- /Member benefit end -->
+
+        <!-- opening start  -->
+         <section class="opening-area-1">
+            <div class="container-custom">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>icons</h3>
+                            <ul>
+                                <li><a href="#">Air Force 1</a></li>
+                                <li><a href="#">Huarache</a></li>
+                                <li><a href="#">Air Max 90</a></li>
+                                <li><a href="#">Air Max 45</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>Shoes</h3>
+                            <ul>
+                                <li><a href="#">All Shoes</a></li>
+                                <li><a href="#">Custom Shoes</a></li>
+                                <li><a href="#">Jordan Shoes</a></li>
+                                <li><a href="#">Running Shoes</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>clothing</h3>
+                            <ul>
+                                <li><a href="#">All Clothing</a></li>
+                                <li><a href="#">Custom clothing</a></li>
+                                <li><a href="#">Modest Wear</a></li>
+                                <li><a href="#">Shirts & Tops</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>kids</h3>
+                            <ul>
+                                <li><a href="#">Infant & Toddler Shoes</a></li>
+                                <li><a href="#">Kids' Shoes</a></li>
+                                <li><a href="#">Kids' Jordan Shoes</a></li>
+                                <li><a href="#">Kids' Running Shoes</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- opening end -->
+        <!-- footer start -->
+         <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>resources</h3>
+                            <p>Find a store</p>
+                            <p>Become a member</p>
+                            <p>send us feedback</p>
+                            <p>find a store</p>
+                            <p>become a member</p>
+                            <p>send us feedback</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>help</h3>
+                            <p>get help</p>
+                            <p>order status</p>
+                            <p>delivery</p>
+                            <p>payment options</p>
+                            <p>returns</p>
+                            <p>contacts us</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item">
+                            <h3>about nike</h3>
+                            <p>about nike</p>
+                            <p>news</p>
+                            <p>careers</p>
+                            <p>inventors</p>
+                            <p>sustainability</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+                        <div class="single-item-end">
+                            <p><i data-feather="globe"></i> VietNam</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class=" row d-flex">
+                    <div class="justify-content-start col-6 ">
+                        <div class="copyright ms-0 py-5">
+                            <span>Copyright &copy; <script>document.write(new Date().getFullYear());</script> NIKE, Inc | All rights reserved - This template is made by Fuder_Phạm (<a target="_blank" href="https://github.com/delee03">delee03-github</a>)
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+         </footer>
+
+        <!-- Back to top -->
+         <a href="#" class="back-to-top cd-top text-replace js-cd-top"></a>
+        
+        <!-- CDN JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -54,6 +774,15 @@
             crossorigin="anonymous"
         ></script>
 
-        <script src="./js/index.js"></script>
+        <!-- Feather Icons -->
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script>
+            feather.replace();
+        </script>
+        <!-- Backtotop lib -->
+         <script src="./assets/js/cody-house.js"></script>
+         <script src="./assets/js/util.js"></script>
+
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>

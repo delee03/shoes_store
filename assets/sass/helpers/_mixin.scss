@@ -1,0 +1,11 @@
+@mixin styleContainerNike() {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@mixin styleBreadcrum($color, $fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    text-transform: uppercase;
+}

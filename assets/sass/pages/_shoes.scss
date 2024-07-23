@@ -1,0 +1,248 @@
+.shoes {
+    padding: $s-30 0 $s-50;
+    .container-nike {
+        @include styleContainerNike();
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .breadcrum {
+                @include styleBreadcrum(
+                    $color: $color-black,
+                    $fs: $s-18,
+                    $fw: $fw-6
+                );
+            }
+            .filter {
+                display: flex;
+                gap: 15px;
+                font-weight: 600;
+                font-size: $s-18;
+                .filter-item:first-child {
+                    a {
+                        &::after {
+                            content: "\f1de";
+                            font-family: "Font Awesome 6 Free";
+                            margin-left: 8px;
+                        }
+                    }
+                }
+                .filter-item:last-child {
+                    a {
+                        &::after {
+                            content: "\f107";
+                            font-family: "Font Awesome 6 Free";
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .shoes-content {
+            .filter-shoe {
+                display: block;
+                max-height: 420px;
+                overflow-y: scroll;
+                padding-right: 20px;
+                .item-content {
+                    padding: 15px 0;
+                    border-top: 1px solid rgba(208, 207, 207, 0.701);
+                    a {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 600;
+                        .down-icon {
+                            display: none;
+                        }
+                    }
+                    .choose-options {
+                        display: none;
+                        margin-top: 10px;
+                        .checkbox {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            flex-wrap: wrap;
+                            margin-left: 15px;
+                            input {
+                                min-height: 40px;
+                                width: 16px;
+                            }
+                            label {
+                                font-weight: 600;
+                            }
+                        }
+                        .color-pick {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 10px;
+                            margin-left: 10px;
+
+                            span {
+                                font-size: 14px;
+                                text-align: center;
+                            }
+                            .purple {
+                                border-radius: 50%;
+                                width: 35px;
+                                height: 35px;
+                                background-color: purple;
+                            }
+                            .black {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: rgb(8, 8, 8);
+                            }
+                            .red {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: red;
+                            }
+                            .orange {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: orange;
+                            }
+                            .blue {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: blue;
+                            }
+                            .white {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                border: 0.5px solid #ccc;
+                                background-color: white;
+                            }
+                            .brown {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: brown;
+                            }
+                            .green {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: green;
+                            }
+                            .yellow {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: yellow;
+                            }
+                            .multiple {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                border: dashed 1px #000;
+                                background-color: white;
+                            }
+                            .grey {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: grey;
+                            }
+                            .pink {
+                                width: 35px;
+                                height: 35px;
+                                border-radius: 50%;
+                                background-color: pink;
+                            }
+                        }
+                    }
+                }
+                .show-filter {
+                    .choose-options {
+                        display: block;
+                    }
+                    a {
+                        .down-icon {
+                            display: inline-block;
+                        }
+                        .up-icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .list-shoes {
+                max-width: 81.9%;
+                .col-lg-4 {
+                    padding: 8px !important;
+                    opacity: 0;
+                    animation-name: zoomIn;
+                    animation-duration: 1s;
+                    animation-fill-mode: forwards; // giữ lại giá trị sau khi chạy animation
+                    @for $i from 2 through 19 {
+                        //hành độg xử lí trong vòng lặp
+                        &:nth-child(#{$i}) {
+                            //i = 2 => 1s; i= 3 => 2s
+                            animation-delay: ($i - 1) * 0.5s;
+                        }
+                    }
+                }
+
+                .shoe-item {
+                    margin-bottom: 30px;
+
+                    .shoe-img {
+                        img {
+                            height: 400px;
+                            width: 100%;
+                            background-color: #f5f5f5;
+                            object-fit: cover;
+                        }
+                    }
+                    .shoe-body {
+                        margin-top: 15px;
+                        .info {
+                            font-weight: $fw-6;
+                            color: rgb(142, 27, 27);
+                        }
+                        .product-name {
+                            margin-top: 8px;
+                            font-weight: $fw-6;
+                            color: #000;
+                            margin: 3px 0 5px;
+                            font-size: $s-16;
+                            text-transform: capitalize;
+                        }
+                        p {
+                            margin-bottom: 0;
+                        }
+                        .category,
+                        .color {
+                            font-weight: $fw-6;
+                            color: #7c7878;
+                        }
+                        .price {
+                            margin-top: 8px;
+                            font-weight: $fw-6;
+                            color: #111;
+                            font-size: $s-16;
+                        }
+                    }
+                }
+            }
+            .show-hide {
+                .filter-shoe {
+                    display: none;
+                }
+                .col-lg-10 {
+                    width: 97%;
+                    max-width: 97%;
+                }
+            }
+        }
+    }
+}

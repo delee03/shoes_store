@@ -1,0 +1,52 @@
+.back-to-top {
+    position: fixed;
+    font-size: 20px;
+    right: 30px;
+    bottom: 4%;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s;
+    /* nhớ cho opacity = 0  và ẩn đi luôn*/
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.back-to-top::before {
+    content: "\f106";
+    font-family: FontAwesome;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: 0.5;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    opacity: 1;
+}
+/* custom scrollbar */
+.filter-shoe:-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    margin-left: 30px;
+}
+
+.filter-shoe::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+}
+
+.filter-shoe::-webkit-scrollbar-thumb {
+    background-color: #6a6a6a;
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html
+    lang="en"
+    class="light-style layout-wide customizer-hide"
+    dir="ltr"
+    data-theme="theme-default"
+    data-assets-path="../../assets/"
+    data-template="vertical-menu-template"
+    data-style="light"
+>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+        />
+
+        <title>NIKE Store</title>
+        <link href="./assets/img/favicon.png" rel="shortcut icon" type="image/x-icon" ></link>
+        <meta
+            name="description"
+            content="Start your development with a Dashboard for Bootstrap 5"
+        />
+        <meta
+            name="keywords"
+            content="dashboard, material, material design, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5"
+        />
+        <!-- Canonical SEO -->
+        <link rel="canonical" href="https://github.com/delee03" />
+
+        <!-- ? PROD Only: Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-5DDHKGP");
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../../assets/img/favicon/favicon.ico"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&ampdisplay=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/fonts/remixicon/remixicon.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/fonts/flag-icons.css"
+        />
+
+        <!-- Menu waves for no-customizer fix -->
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/libs/node-waves/node-waves.css"
+        />
+
+        <!-- Core CSS -->
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/css/rtl/core.css"
+            class="template-customizer-core-css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/css/rtl/theme-default.css"
+            class="template-customizer-theme-css"
+        />
+        <link rel="stylesheet" href="../../assets/css/demo.css" />
+
+        <!-- Vendors CSS -->
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/libs/typeahead-js/typeahead.css"
+        />
+        <!-- Vendor -->
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/libs/@form-validation/form-validation.css"
+        />
+
+        <!-- Page CSS -->
+        <!-- Page -->
+        <link
+            rel="stylesheet"
+            href="../../assets/vendor/css/pages/page-auth.css"
+        />
+
+        <!-- Helpers -->
+        <script src="../../assets/vendor/js/helpers.js"></script>
+        <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+        <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+        <script src="../../assets/vendor/js/template-customizer.js"></script>
+        <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+        <script src="../../assets/js/config.js"></script>
+    </head>
+
+    <body>
+        <!-- ?PROD Only: Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!-- Content -->
+
+        <div class="authentication-wrapper authentication-cover">
+            <!-- Logo -->
+            <a
+                href="../../index.html"
+                class="auth-cover-brand d-flex align-items-center gap-3"
+            >
+                <span class="app-brand-logo demo">
+                    <span style="color: var(--bs-primary)">
+                        <svg
+                            aria-hidden="true"
+                            class="swoosh-svg"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                            role="img"
+                            width="24px"
+                            height="24px"
+                            fill="none"
+                        >
+                            <path
+                                fill="currentColor"
+                                fill-rule="evenodd"
+                                d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </span>
+                </span>
+                <span class="app-brand-text demo text-heading fw-semibold"
+                    >NIKA</span
+                >
+            </a>
+            <!-- /Logo -->
+            <div class="authentication-inner row m-0">
+                <!-- /Left Section -->
+                <div
+                    class="d-none d-lg-flex col-lg-7 col-xl-8 align-items-center justify-content-center p-12 pb-2"
+                >
+                    <div>
+                        <img
+                            src="../../assets/img/illustrations/auth-cover-login-illustration-light.png"
+                            class="authentication-image-model d-none d-lg-block"
+                            alt="auth-model"
+                            data-app-light-img="illustrations/auth-cover-login-illustration-light.png"
+                            data-app-dark-img="illustrations/auth-cover-login-illustration-dark.png"
+                        />
+                    </div>
+                    <img
+                        src="../../assets/img/illustrations/tree.png"
+                        alt="tree"
+                        class="authentication-image-tree z-n1"
+                    />
+                    <img
+                        src="../../assets/img/illustrations/auth-cover-mask-light.png"
+                        class="scaleX-n1-rtl authentication-image d-none d-lg-block w-75"
+                        alt="triangle-bg"
+                        height="362"
+                        data-app-light-img="illustrations/auth-cover-mask-light.png"
+                        data-app-dark-img="illustrations/auth-cover-mask-dark.png"
+                    />
+                </div>
+                <!-- /Left Section -->
+
+                <!-- Login -->
+                <div
+                    class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg position-relative py-sm-5 px-12 py-4"
+                >
+                    <div class="w-px-400 mx-auto pt-5 pt-lg-0">
+                        <h4 class="mb-1">Welcome to NIKA! 👋🏻</h4>
+                        <p class="mb-5">
+                            Please sign in to start your adventures!
+                        </p>
+
+                        <form
+                            id="formAuthentication"
+                            class="mb-5"
+                            action=""
+                            action="./../../index.html"
+                        >
+                            <!-- <div
+                                class="form-floating form-floating-outline mb-5"
+                            >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="email"
+                                    name="email-username"
+                                    placeholder="Enter your email or username"
+                                    autofocus
+                                />
+                                <label for="email">Email or Username</label>
+                            </div> -->
+                            <div
+                                class="form-floating form-floating-outline mb-5"
+                            >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                />
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="mb-5">
+                                <div class="form-password-toggle">
+                                    <div class="input-group input-group-merge">
+                                        <div
+                                            class="form-floating form-floating-outline"
+                                        >
+                                            <input
+                                                type="password"
+                                                id="password"
+                                                class="form-control"
+                                                name="password"
+                                                placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                                                aria-describedby="password"
+                                            />
+                                            <label for="password"
+                                                >Password</label
+                                            >
+                                        </div>
+                                        <span
+                                            class="input-group-text cursor-pointer"
+                                            ><i
+                                                class="ri-eye-off-line ri-20px"
+                                            ></i
+                                        ></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="error" id="error"></div>
+                            <div
+                                class="mb-5 d-flex justify-content-between flex-wrap py-2"
+                            >
+                                <div class="form-check mb-0">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="remember-me"
+                                    />
+                                    <label
+                                        class="form-check-label me-2"
+                                        for="remember-me"
+                                    >
+                                        Remember Me
+                                    </label>
+                                </div>
+                                <a
+                                    href="auth-forgot-password-cover.html"
+                                    class="float-end mb-1"
+                                >
+                                    <span>Forgot Password?</span>
+                                </a>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary d-grid w-100"
+                            >
+                                Login
+                            </button>
+                        </form>
+
+                        <p class="text-center">
+                            <span>You are newbies in this platform?</span>
+                            <a href="register.html">
+                                <span>Create an account</span>
+                            </a>
+                        </p>
+
+                        <div class="divider my-5">
+                            <div class="divider-text">or</div>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-2">
+                            <a
+                                href="javascript:;"
+                                class="btn btn-icon btn-lg rounded-pill btn-text-facebook"
+                            >
+                                <i
+                                    class="tf-icons ri-facebook-fill ri-24px"
+                                ></i>
+                            </a>
+
+                            <a
+                                href="javascript:;"
+                                class="btn btn-icon btn-lg rounded-pill btn-text-twitter"
+                            >
+                                <i class="tf-icons ri-twitter-fill ri-24px"></i>
+                            </a>
+
+                            <a
+                                href="javascript:;"
+                                class="btn btn-icon btn-lg rounded-pill btn-text-github"
+                            >
+                                <i class="tf-icons ri-github-fill ri-24px"></i>
+                            </a>
+
+                            <a
+                                href="javascript:;"
+                                class="btn btn-icon btn-lg rounded-pill btn-text-google-plus"
+                            >
+                                <i class="tf-icons ri-google-fill ri-24px"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Login -->
+            </div>
+        </div>
+        <script>
+            document
+                .getElementById("formAuthentication")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    let email = document.getElementById("email").value;
+                    let password = document.getElementById("password").value;
+                    let errorDiv = document.getElementById("errorDiv");
+                    console.log("Email:", email);
+                    console.log("Password:", password);
+                    errorDiv.textContent = ""; // Xóa mọi thông báo lỗi trước đó
+
+                    fetch("https://shop.cyberlearn.vn/api/Users/signin", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            email,
+                            password,
+                        }),
+                    })
+                        .then((response) => {
+                            console.log(response);
+                            // Kiểm tra nếu response không phải là JSON
+                            if (!response.ok) {
+                                return response.json().then((data) => {
+                                    throw new Error(
+                                        data.message || "Đăng nhập thất bại!"
+                                    );
+                                });
+                            }
+                            return response.json();
+                        })
+                        .then((data) => {
+                            if (data.success) {
+                                console.log("Data:", data);
+                                alert("Đăng nhập thành công!");
+                                // Chuyển hướng người dùng đến trang khác nếu cần
+                                window.location.href =
+                                    "http://127.0.0.1:5501/index.html";
+                            } else {
+                                throw new Error(
+                                    data.message || "Đăng nhập thất bại!"
+                                );
+                            }
+                        })
+                        .catch((error) => {
+                            errorDiv.textContent = error.message;
+                        });
+                });
+        </script>
+        <!-- / Content -->
+
+        <!-- Core JS -->
+        <!-- build:js assets/vendor/js/core.js -->
+        <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="../../assets/vendor/libs/popper/popper.js"></script>
+        <script src="../../assets/vendor/js/bootstrap.js"></script>
+        <script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+        <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+        <script src="../../assets/vendor/libs/i18n/i18n.js"></script>
+        <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+        <script src="../../assets/vendor/js/menu.js"></script>
+
+        <!-- endbuild -->
+
+        <!-- Vendors JS -->
+        <script src="../../assets/vendor/libs/@form-validation/popular.js"></script>
+        <script src="../../assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+        <script src="../../assets/vendor/libs/@form-validation/auto-focus.js"></script>
+
+        <!-- Main JS -->
+        <script src="../../assets/js/main.js"></script>
+
+        <!-- Page JS -->
+        <script src="../../assets/js/pages-auth.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+            integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>
+
+<!-- beautify ignore:end -->

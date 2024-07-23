@@ -1,0 +1,806 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  color: #111;
+}
+header .sub-header {
+  background-color: #f5f5f5;
+  padding: 8px 35px;
+  font-size: 12px;
+}
+header .sub-header .sub-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .sub-header .sub-content .sub-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  list-style: none;
+}
+header .sub-header .sub-content .sub-menu li:not(.signin) {
+  margin-right: 10px;
+  padding-right: 10px;
+  font-weight: 700;
+  border-right: 2px solid #111;
+}
+header .sub-header .sub-content .sub-menu li.signin {
+  font-weight: 700;
+}
+header .main-header {
+  background-color: #fff;
+  padding: 20px 35px 8px;
+}
+header .main-header .main-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main-header .main-header-content .nav-brand {
+  position: relative;
+  width: 170px;
+  height: 48px;
+}
+header .main-header .main-header-content .nav-brand svg {
+  position: absolute;
+  left: -5px;
+  bottom: -7px;
+  height: 80px;
+  width: 80px;
+}
+header .main-header .main-header-content .nav-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+header .main-header .main-header-content .nav-menu ul li {
+  position: relative;
+  margin-right: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+header .main-header .main-header-content .nav-menu ul li:hover::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  background-color: #111;
+  position: absolute;
+}
+header .main-header .main-header-content .nav-whislist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+header .main-header .main-header-content .nav-whislist .search {
+  position: relative;
+  transition: all 0.4s;
+}
+header .main-header .main-header-content .nav-whislist .search svg {
+  height: 20px;
+  top: 6px;
+  left: 5px;
+  position: absolute;
+}
+header .main-header .main-header-content .nav-whislist .search span {
+  position: absolute;
+  top: 4px;
+  left: 35px;
+  color: #111;
+  font-weight: 600;
+}
+header .main-header .main-header-content .nav-whislist .search input {
+  padding: 4px 0;
+  border-radius: 999px;
+  background-color: #f5f5f5;
+  border: none;
+}
+header .main-header .main-header-content .nav-whislist .search:hover input {
+  background-color: #e5e5e5;
+}
+header .main-header .main-header-content .nav-whislist a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+header .main-header .main-header-content .nav-whislist a:hover {
+  background-color: #e5e5e5;
+}
+
+.opening-area-1 {
+  padding: 50px 0;
+}
+.opening-area-1 .container-custom {
+  width: 60%;
+  margin: 0 auto;
+}
+.opening-area-1 .container-custom .single-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  text-transform: capitalize;
+}
+.opening-area-1 .container-custom .single-item ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+.opening-area-1 .container-custom .single-item ul a {
+  display: block;
+  color: #707072;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+.opening-area-1 .container-custom .single-item ul a:hover {
+  color: #111;
+}
+
+footer {
+  border-top: 2px solid #e5e5e5;
+  width: 100%;
+  gap: 12px;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+footer .single-item {
+  align-items: flex-start;
+  gap: 12px;
+}
+footer .single-item h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+footer .single-item p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #707072;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+footer .single-item p:hover {
+  color: #111;
+}
+footer .single-item-end {
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .single-item-end p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #707072;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+footer .single-item-end p:hover {
+  color: #111;
+}
+footer .copyright {
+  color: #707072;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.banner-area {
+  height: 150vh;
+}
+.banner-area .content {
+  position: relative;
+  height: 100vh;
+}
+.banner-area .content .video {
+  position: relative;
+}
+.banner-area .content .video video {
+  position: absolute;
+  left: 0px;
+  top: -55px;
+  z-index: -2;
+  width: 100%;
+}
+.banner-area .content .heading {
+  padding: 60px 0 50px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  top: 105%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  text-align: center;
+  /* margin-top: 16vh; */
+  color: #111;
+}
+.banner-area .content .heading h2 {
+  font-size: 75px;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+.banner-area .content .heading p {
+  font-size: 18px;
+}
+.banner-area .content .heading a button {
+  font-size: 16px;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.banner-area .content .heading a button:hover {
+  background-color: #707072;
+}
+
+.trending {
+  padding: 50px 0;
+}
+.trending .container-fluid {
+  margin-right: 25px;
+  max-width: 97%;
+}
+.trending .container-fluid .row {
+  margin-right: -45px;
+}
+.trending .container-fluid .row .col-lg-6 {
+  width: 49%;
+}
+.trending .container-fluid .row .col-lg-6 .item {
+  position: relative;
+}
+.trending .container-fluid .row .col-lg-6 .item .noidung {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 5%;
+}
+.trending .container-fluid .row .col-lg-6 .item .noidung h3 {
+  font-size: 20px;
+}
+.trending .container-fluid .row .col-lg-6 .item .noidung p {
+  font-size: 16px;
+}
+.trending .container-fluid .row .col-lg-6 .item .noidung button {
+  font-size: 16px;
+  background-color: #fff;
+  color: #111;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.trending .container-fluid .row .col-lg-6 .item .noidung button:hover {
+  background-color: #707072;
+}
+
+.banner-ads {
+  padding: 50px 0;
+}
+.banner-ads .container-nike {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.member .product .product-img img {
+  width: 100%;
+  height: 590px;
+}
+.member .product .product-img .noidung {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 5%;
+}
+.member .product .product-img .noidung h3 {
+  font-size: 20px;
+}
+.member .product .product-img .noidung p {
+  font-size: 16px;
+}
+.member .product .product-img .noidung button {
+  font-size: 16px;
+  background-color: #fff;
+  color: #111;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.member .product .product-img .noidung button:hover {
+  background-color: #707072;
+}
+
+.notify {
+  box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset;
+  background-color: rgb(247, 247, 247);
+  overflow: hidden;
+}
+.notify .carousel-inner {
+  width: 50%;
+  margin: 0 auto;
+}
+.notify .carousel-inner .carousel-item {
+  min-height: 85px;
+  background: rgb(247, 247, 247);
+  box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset;
+}
+.notify .carousel-inner .carousel-item .content {
+  display: flex;
+  padding: 25px 0;
+  margin-top: 3px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-right: 30px;
+}
+.notify .carousel-inner .carousel-item .content h5 {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+}
+.notify .carousel-inner .carousel-item .content span {
+  font-size: 14px;
+}
+.notify .carousel-control-prev {
+  left: 250px;
+}
+.notify .carousel-control-next {
+  right: 245px;
+}
+.notify .carousel-control-prev-icon {
+  background-image: url("../../../assets/img/left-arrow-angle.png") !important;
+}
+.notify .carousel-control-next-icon {
+  background-image: url("../../../assets/img/right-arrow-angle.png") !important;
+}
+
+.shoes {
+  padding: 30px 0 50px;
+}
+.shoes .container-nike {
+  max-width: 95%;
+  margin: 0 auto;
+}
+.shoes .container-nike .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.shoes .container-nike .heading .breadcrum {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+}
+.shoes .container-nike .heading .filter {
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.shoes .container-nike .heading .filter .filter-item:first-child a::after {
+  content: "\f1de";
+  font-family: "Font Awesome 6 Free";
+  margin-left: 8px;
+}
+.shoes .container-nike .heading .filter .filter-item:last-child a::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  margin-left: 8px;
+}
+.shoes .container-nike .shoes-content .filter-shoe {
+  display: block;
+  max-height: 420px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content {
+  padding: 15px 0;
+  border-top: 1px solid rgba(208, 207, 207, 0.701);
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content a .down-icon {
+  display: none;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options {
+  display: none;
+  margin-top: 10px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: 15px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .checkbox input {
+  min-height: 40px;
+  width: 16px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .checkbox label {
+  font-weight: 600;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 10px;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick span {
+  font-size: 14px;
+  text-align: center;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .purple {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: purple;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .black {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(8, 8, 8);
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .red {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: red;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .orange {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .blue {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: blue;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .white {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 0.5px solid #ccc;
+  background-color: white;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .brown {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: brown;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .green {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: green;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .yellow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .multiple {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: dashed 1px #000;
+  background-color: white;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .grey {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: grey;
+}
+.shoes .container-nike .shoes-content .filter-shoe .item-content .choose-options .color-pick .pink {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: pink;
+}
+.shoes .container-nike .shoes-content .filter-shoe .show-filter .choose-options {
+  display: block;
+}
+.shoes .container-nike .shoes-content .filter-shoe .show-filter a .down-icon {
+  display: inline-block;
+}
+.shoes .container-nike .shoes-content .filter-shoe .show-filter a .up-icon {
+  display: none;
+}
+.shoes .container-nike .shoes-content .list-shoes {
+  max-width: 81.9%;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4 {
+  padding: 8px !important;
+  opacity: 0;
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(3) {
+  animation-delay: 1s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(5) {
+  animation-delay: 2s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(7) {
+  animation-delay: 3s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(8) {
+  animation-delay: 3.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(9) {
+  animation-delay: 4s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(10) {
+  animation-delay: 4.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(11) {
+  animation-delay: 5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(12) {
+  animation-delay: 5.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(13) {
+  animation-delay: 6s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(14) {
+  animation-delay: 6.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(15) {
+  animation-delay: 7s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(16) {
+  animation-delay: 7.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(17) {
+  animation-delay: 8s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(18) {
+  animation-delay: 8.5s;
+}
+.shoes .container-nike .shoes-content .list-shoes .col-lg-4:nth-child(19) {
+  animation-delay: 9s;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item {
+  margin-bottom: 30px;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-img img {
+  height: 400px;
+  width: 100%;
+  background-color: #f5f5f5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body {
+  margin-top: 15px;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .info {
+  font-weight: 600;
+  color: rgb(142, 27, 27);
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .product-name {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #000;
+  margin: 3px 0 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body p {
+  margin-bottom: 0;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .category,
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .color {
+  font-weight: 600;
+  color: #7c7878;
+}
+.shoes .container-nike .shoes-content .list-shoes .shoe-item .shoe-body .price {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #111;
+  font-size: 16px;
+}
+.shoes .container-nike .shoes-content .show-hide .filter-shoe {
+  display: none;
+}
+.shoes .container-nike .shoes-content .show-hide .col-lg-10 {
+  width: 97%;
+  max-width: 97%;
+}
+
+.detail .container-fluid .blog_title {
+  text-align: center;
+  margin-top: 30px;
+}
+.detail .container-fluid .blog_title h2 {
+  color: #111;
+  font-size: 32px;
+}
+.detail .container-fluid .blog_title p {
+  font-size: 20px;
+  color: #111;
+}
+.detail .container-fluid .section-title {
+  padding: 0 48;
+}
+.detail .container-fluid .section-title h3 {
+  color: #111;
+  font-size: 24px;
+}
+
+.item .container-fluid {
+  padding: 0 180px;
+}
+.item .container-fluid .item_left .image_left img {
+  width: 85%;
+}
+.item .container-fluid .item_right .title1 h2 {
+  color: #111;
+}
+.item .container-fluid .item_right .title2 .item_bg img {
+  width: 100px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.item .container-fluid .item_right .title3 .col {
+  padding: 0;
+}
+.item .container-fluid .item_right .title3 .btn-size {
+  width: 90%;
+  background-color: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px;
+  border: 1px solid #cacacb;
+  transition: all 0.5;
+}
+.item .container-fluid .item_right .title3 .btn-size:hover {
+  border-color: #111;
+}
+.item .container-fluid .item_right .title4 .btn_item1 button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 20px 35px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+.item .container-fluid .item_right .title4 .btn_item2 button {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 20px 35px;
+  border-radius: 40px;
+  border: 1px solid #cacacb;
+  transition: all 0.5;
+  margin-bottom: 20px;
+}
+.item .container-fluid .item_right .title4 p {
+  text-align: center;
+  color: #cacacb;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.item .container-fluid .item_right .title5 p {
+  text-align: left;
+}
+.item .container-fluid .item_right .title5 button {
+  border: none;
+  border-bottom: 1px solid #111;
+  background-color: white;
+  padding: 0;
+  transition: all 0.5;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.item .container-fluid .item_right .title5 button:hover {
+  color: #ccc;
+}
+.item .container-fluid .item_right .title6 .tab-container {
+  width: 100%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+.item .container-fluid .item_right .title6 .tab {
+  border-top: 1px solid #ccc;
+}
+.item .container-fluid .item_right .title6 .tab-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+}
+.item .container-fluid .item_right .title6 .tab-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.item .container-fluid .item_right .title6 .tab-header.active + .tab-content {
+  display: block;
+}
+.item .container-fluid .item_right .title6 .tab-header .arrow {
+  float: right;
+  transition: transform 0.3s;
+}
+.item .container-fluid .item_right .title6 .tab-header.active .arrow {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=style.css.map */

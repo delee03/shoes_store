@@ -1,0 +1,29 @@
+@mixin styleButton() {
+    background-color: $bg-black;
+    color: $color-white;
+    font-size: $fs-md;
+    font-weight: $fw-6;
+    border: none;
+    border-radius: 999px;
+    padding: $p-8 $p-16;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg-btn-hover;
+    }
+}
+
+@mixin styleButtonWhite() {
+    background-color: $bg-white;
+    color: $color-black;
+    font-size: $fs-md;
+    font-weight: $fw-6;
+    border: none;
+    border-radius: 999px;
+    padding: $p-8 $p-16;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg-btn-hover;
+    }
+}
